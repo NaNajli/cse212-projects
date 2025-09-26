@@ -6,23 +6,19 @@ public class FeatureCollection
     public string Place { get; set; }
     public double Mag { get; set; }
 
-    // class Information
-    // {
-    // public string Place { get; set; }
-    // public double Mag { get; set; }
-    // }
-    // class Features
-    // {
-    // public Features[] Feature { get; set; }
-    // 
-    // public Properties Properties { get; set; }
-    // 
-    // }
-    // class Properties
-    // {
-    // public Information Place { get; set; }
-    // public Information Mag { get; set; }
-    // }
+
+}
+public class Features
+{
+    public Features[] Feature { get; set; }
 
 
 }
+public class Properties
+{
+    public string Place { get; set; }
+    public double Mag { get; set; }
+}
+
+
+

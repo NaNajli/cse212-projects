@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Reflection.PortableExecutable;
+using System.Runtime.Versioning;
 using System.Text.Json;
 using Microsoft.VisualBasic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -169,14 +170,14 @@ public static class SetsAndMaps
 
 
         var features = new List<FeatureCollection>();
-        foreach (var item in features)
+
+        foreach (var f in features)
         {
-
-            Console.WriteLine(item.Place);
-            Console.WriteLine(item.Mag);
+            // 
+            // 
         }
-
-        return features.Select(f => $"{f.Place}, {f.Mag}").ToArray();
+        // Console.WriteLine(options);
+        return features.Select(f => $"{f.Place}, {f.Place}").ToArray();
 
 
     }
